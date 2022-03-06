@@ -1,0 +1,604 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://dbpedia.org/ontology/Person"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://dbpedia.org/ontology/composer"
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#n"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://w3id.org/tvshow#hasAge"
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://w3id.org/tvshow#Characters"
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://w3id.org/tvshow#Child"
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid21"
+    }, {
+      "@id" : "_:genid19"
+    }, {
+      "@id" : "_:genid17"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid25"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#n"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://w3id.org/tvshow#hasAge"
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://w3id.org/tvshow#Characters"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://dbpedia.org/ontology/Person"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://dbpedia.org/ontology/executiveProducer"
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "urn:swrl:var#n"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "15"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"
+  } ]
+}, {
+  "@id" : "_:genid25",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://w3id.org/tvshow#Adult"
+  } ]
+}, {
+  "@id" : "_:genid26",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid32"
+    }, {
+      "@id" : "_:genid30"
+    }, {
+      "@id" : "_:genid28"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid36"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid28",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#t"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://w3id.org/tvshow#TVShow"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://dbpedia.org/ontology/Person"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/tvshow#hasDirector"
+  } ]
+}, {
+  "@id" : "_:genid30",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#t"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#s"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://dbpedia.org/ontology/numberOfSeasons"
+  } ]
+}, {
+  "@id" : "_:genid32",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "urn:swrl:var#s"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "2"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"
+  } ]
+}, {
+  "@id" : "_:genid36",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#t"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://w3id.org/tvshow#Long"
+  } ]
+}, {
+  "@id" : "_:genid37",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid43"
+    }, {
+      "@id" : "_:genid41"
+    }, {
+      "@id" : "_:genid39"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid47"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid39",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#t"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://w3id.org/tvshow#TVShow"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid12"
+    }, {
+      "@id" : "_:genid10"
+    }, {
+      "@id" : "_:genid6"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid14"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid41",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#t"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#s"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://dbpedia.org/ontology/numberOfSeasons"
+  } ]
+}, {
+  "@id" : "_:genid43",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "urn:swrl:var#s"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "2"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#lessThan"
+  } ]
+}, {
+  "@id" : "_:genid47",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#t"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://w3id.org/tvshow#Short"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "urn:swrl:var#n"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "15"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#lessThan"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/ontology/HBO",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://dbpedia.org/ontology/Location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://dbpedia.org/ontology/Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Person"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/ontology/abstract",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://dbpedia.org/ontology/channel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/tvshow#Channel"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/ontology/completionDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/ontology/composer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/tvshow#MusicComposer"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/ontology/executiveProducer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/tvshow#ExecutiveProducer"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/ontology/location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://dbpedia.org/ontology/Location"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/ontology/numberOfEpisodes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://dbpedia.org/ontology/numberOfSeasons",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/ontology/releaseDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrlb#greaterThanOrEqual",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Builtin" ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrlb#lessThan",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Builtin" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Image",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/depiction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Image"
+  } ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://dbpedia.org/page/Arya_Stark",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "https://dbpedia.org/page/Arya_Stark"
+  } ],
+  "https://w3id.org/tvshow#hasAge" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "12"
+  } ],
+  "https://w3id.org/tvshow#playedBy" : [ {
+    "@id" : "https://w3id.org/tvshow#Maisie_Williams"
+  } ]
+}, {
+  "@id" : "https://dbpedia.org/page/Carolyn_Strauss",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://dbpedia.org/page/Croatia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://dbpedia.org/page/D._B._Weiss",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://dbpedia.org/page/David_Benioff",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://dbpedia.org/page/David_Nutter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://dbpedia.org/page/Iceland",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://dbpedia.org/page/Jon_Snow",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "https://dbpedia.org/page/Jon_Snow_(character)"
+  } ],
+  "https://w3id.org/tvshow#hasAge" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "39"
+  } ],
+  "https://w3id.org/tvshow#playedBy" : [ {
+    "@id" : "https://w3id.org/tvshow#Kit_Harington"
+  } ]
+}, {
+  "@id" : "https://dbpedia.org/page/Ramin_Djawadi",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://dbpedia.org/ontology/Person" ]
+}, {
+  "@id" : "https://w3id.org/tvshow",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "v0.0.1"
+  } ],
+  "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#abstract" : [ {
+    "@value" : "A representation of the TV Shows including their characters, episodes, etc."
+  }, {
+    "@value" : "Aitor Corchero"
+  } ],
+  "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#title" : [ {
+    "@value" : "TVShowsOntology"
+  } ]
+}, {
+  "@id" : "https://w3id.org/tvshow#Adult",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/tvshow#Characters"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/tvshow#Child"
+  } ]
+}, {
+  "@id" : "https://w3id.org/tvshow#Alan_Taylor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://w3id.org/tvshow#Channel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/tvshow#Characters",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/tvshow#Child",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/tvshow#Characters"
+  } ]
+}, {
+  "@id" : "https://w3id.org/tvshow#Director",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/tvshow#ExecutiveProducer"
+  }, {
+    "@id" : "https://w3id.org/tvshow#MusicComposer"
+  } ]
+}, {
+  "@id" : "https://w3id.org/tvshow#ExecutiveProducer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/tvshow#MusicComposer"
+  } ]
+}, {
+  "@id" : "https://w3id.org/tvshow#GameOfThrones",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://dbpedia.org/ontology/abstract" : [ {
+    "@language" : "en",
+    "@value" : "Game of Thrones is an American fantasy drama television series created by David Benioff and D. B. Weiss for HBO. It is an adaptation of A Song of Ice and Fire, a series of fantasy novels by George R. R. Martin, the first of which is A Game of Thrones. The show was shot in the United Kingdom, Canada, Croatia, Iceland, Malta, Morocco, and Spain. It premiered on HBO in the United States on April 17, 2011, and concluded on May 19, 2019, with 73 episodes broadcast over eight seasons. Set on the fictional continents of Westeros and Essos, Game of Thrones has a large ensemble cast and follows several story arcs throughout the course of the show. The first major arc concerns the Iron Throne of the Seven Kingdoms of Westeros through a web of political conflicts among the noble families either vying to claim the throne or fighting for independence from whoever sits on it. A second focuses on the last descendant of the realm's deposed ruling dynasty, who has been exiled to Essos and is plotting to return and reclaim the throne. The third follows the Night's Watch, a military order defending the realm against threats from beyond Westeros's northern border. Game of Thrones attracted a record viewership on HBO and has a broad, active, and international fan base. Critics have praised the series for its acting, complex characters, story, scope, and production values, although its frequent use of nudity and violence (including sexual violence) has been subject to criticism. The final season received significant critical backlash for its reduced length and creative decisions, with many considering it a disappointing conclusion. The series received 59 Primetime Emmy Awards, the most by a drama series, including Outstanding Drama Series in 2015, 2016, 2018 and 2019. Its other awards and nominations include three Hugo Awards for Best Dramatic Presentation, a Peabody Award, and five nominations for the Golden Globe Award for Best Television Series – Drama. Many critics and publications have named the show as one of the best television series of all time."
+  } ],
+  "http://dbpedia.org/ontology/channel" : [ {
+    "@id" : "http://dbpedia.org/ontology/HBO"
+  } ],
+  "http://dbpedia.org/ontology/completionDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2019-05-19T00:00:00.00"
+  } ],
+  "http://dbpedia.org/ontology/composer" : [ {
+    "@id" : "https://dbpedia.org/page/Ramin_Djawadi"
+  } ],
+  "http://dbpedia.org/ontology/executiveProducer" : [ {
+    "@id" : "https://dbpedia.org/page/Carolyn_Strauss"
+  }, {
+    "@id" : "https://dbpedia.org/page/D._B._Weiss"
+  }, {
+    "@id" : "https://dbpedia.org/page/David_Benioff"
+  }, {
+    "@id" : "https://dbpedia.org/page/David_Nutter"
+  } ],
+  "http://dbpedia.org/ontology/location" : [ {
+    "@id" : "https://dbpedia.org/page/Croatia"
+  }, {
+    "@id" : "https://dbpedia.org/page/Iceland"
+  } ],
+  "http://dbpedia.org/ontology/numberOfEpisodes" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#int",
+    "@value" : "73"
+  } ],
+  "http://dbpedia.org/ontology/numberOfSeasons" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#int",
+    "@value" : "8"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "https://dbpedia.org/page/Game_of_Thrones"
+  } ],
+  "https://w3id.org/tvshow#hasCharacters" : [ {
+    "@id" : "https://dbpedia.org/page/Arya_Stark"
+  }, {
+    "@id" : "https://dbpedia.org/page/Jon_Snow"
+  } ],
+  "https://w3id.org/tvshow#hasDirector" : [ {
+    "@id" : "https://w3id.org/tvshow#Alan_Taylor"
+  }, {
+    "@id" : "https://w3id.org/tvshow#Mark_Mylod"
+  } ]
+}, {
+  "@id" : "https://w3id.org/tvshow#Kit_Harington",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Kit Harington"
+  } ]
+}, {
+  "@id" : "https://w3id.org/tvshow#Long",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/tvshow#TVShow"
+  } ]
+}, {
+  "@id" : "https://w3id.org/tvshow#Maisie_Williams",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://w3id.org/tvshow#Mark_Mylod",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://w3id.org/tvshow#MusicComposer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/tvshow#Short",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/tvshow#TVShow"
+  } ]
+}, {
+  "@id" : "https://w3id.org/tvshow#TVShow",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid1"
+  }, {
+    "@id" : "_:genid2"
+  }, {
+    "@id" : "_:genid3"
+  } ]
+}, {
+  "@id" : "https://w3id.org/tvshow#hasAge",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ]
+}, {
+  "@id" : "https://w3id.org/tvshow#hasCharacters",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/tvshow#TVShow"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/tvshow#Characters"
+  } ]
+}, {
+  "@id" : "https://w3id.org/tvshow#hasDirector",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/tvshow#Director"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/tvshow#playedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/tvshow#Characters"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://dbpedia.org/ontology/Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#abstract",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "urn:swrl:var#c",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "urn:swrl:var#n",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "urn:swrl:var#s",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "urn:swrl:var#t",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+} ]

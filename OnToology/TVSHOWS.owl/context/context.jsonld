@@ -1,0 +1,116 @@
+{
+  "@context" : {
+    "abstract" : {
+      "@id" : "http://dbpedia.org/ontology/abstract"
+    },
+    "numberOfEpisodes" : {
+      "@id" : "http://dbpedia.org/ontology/numberOfEpisodes"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "ExecutiveProducer" : {
+      "@id" : "https://w3id.org/tvshow#ExecutiveProducer"
+    },
+    "hasCharacters" : {
+      "@id" : "https://w3id.org/tvshow#hasCharacters",
+      "@type" : "@id"
+    },
+    "Director" : {
+      "@id" : "https://w3id.org/tvshow#Director"
+    },
+    "Characters" : {
+      "@id" : "https://w3id.org/tvshow#Characters"
+    },
+    "depiction" : {
+      "@id" : "http://xmlns.com/foaf/0.1/depiction",
+      "@type" : "@id"
+    },
+    "Short" : {
+      "@id" : "https://w3id.org/tvshow#Short"
+    },
+    "TVShow" : {
+      "@id" : "https://w3id.org/tvshow#TVShow"
+    },
+    "Location" : {
+      "@id" : "http://dbpedia.org/ontology/Location"
+    },
+    "Adult" : {
+      "@id" : "https://w3id.org/tvshow#Adult"
+    },
+    "Person" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Person"
+    },
+    "releaseDate" : {
+      "@id" : "http://dbpedia.org/ontology/releaseDate"
+    },
+    "numberOfSeasons" : {
+      "@id" : "http://dbpedia.org/ontology/numberOfSeasons"
+    },
+    "hasAge" : {
+      "@id" : "https://w3id.org/tvshow#hasAge",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "playedBy" : {
+      "@id" : "https://w3id.org/tvshow#playedBy",
+      "@type" : "@id"
+    },
+    "creator" : {
+      "@id" : "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#creator"
+    },
+    "name" : {
+      "@id" : "http://xmlns.com/foaf/0.1/name"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "location" : {
+      "@id" : "http://dbpedia.org/ontology/location",
+      "@type" : "@id"
+    },
+    "composer" : {
+      "@id" : "http://dbpedia.org/ontology/composer",
+      "@type" : "@id"
+    },
+    "completionDate" : {
+      "@id" : "http://dbpedia.org/ontology/completionDate"
+    },
+    "title" : {
+      "@id" : "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#title"
+    },
+    "executiveProducer" : {
+      "@id" : "http://dbpedia.org/ontology/executiveProducer",
+      "@type" : "@id"
+    },
+    "Long" : {
+      "@id" : "https://w3id.org/tvshow#Long"
+    },
+    "channel" : {
+      "@id" : "http://dbpedia.org/ontology/channel",
+      "@type" : "@id"
+    },
+    "Channel" : {
+      "@id" : "https://w3id.org/tvshow#Channel"
+    },
+    "hasDirector" : {
+      "@id" : "https://w3id.org/tvshow#hasDirector",
+      "@type" : "@id"
+    },
+    "Child" : {
+      "@id" : "https://w3id.org/tvshow#Child"
+    },
+    "sameAs" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs"
+    },
+    "Image" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Image"
+    },
+    "MusicComposer" : {
+      "@id" : "https://w3id.org/tvshow#MusicComposer"
+    }
+  }
+}
