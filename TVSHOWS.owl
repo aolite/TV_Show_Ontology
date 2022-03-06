@@ -1,0 +1,750 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/aitor.corchero/ontologies/2022/2/untitled-ontology-13#"
+     xml:base="http://www.semanticweb.org/aitor.corchero/ontologies/2022/2/untitled-ontology-13"
+     xmlns:dbo="http://dbpedia.org/ontology/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:tvshow="https://w3id.org/tvshow#"
+     xmlns:dcmi-terms="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#"
+     xmlns:untitled-ontology-13="http://www.semanticweb.org/aitor.corchero/ontologies/2022/2/untitled-ontology-13#">
+    <owl:Ontology rdf:about="https://w3id.org/tvshow">
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">v0.0.1</owl:versionInfo>
+        <dcmi-terms:abstract rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A representation of the TV Shows including their characters, episodes, etc.</dcmi-terms:abstract>
+        <dcmi-terms:abstract rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aitor Corchero</dcmi-terms:abstract>
+        <dcmi-terms:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TVShowsOntology</dcmi-terms:title>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#sameAs -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#sameAs"/>
+    
+
+
+    <!-- https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#abstract -->
+
+    <owl:AnnotationProperty rdf:about="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#abstract"/>
+    
+
+
+    <!-- https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#creator -->
+
+    <owl:AnnotationProperty rdf:about="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#creator"/>
+    
+
+
+    <!-- https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#title -->
+
+    <owl:AnnotationProperty rdf:about="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia.org/ontology/channel -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/channel">
+        <rdfs:range rdf:resource="https://w3id.org/tvshow#Channel"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/composer -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/composer">
+        <rdfs:range rdf:resource="https://w3id.org/tvshow#MusicComposer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/executiveProducer -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/executiveProducer">
+        <rdfs:range rdf:resource="https://w3id.org/tvshow#ExecutiveProducer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/location -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/location">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/depiction -->
+
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/depiction">
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Image"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/tvshow#hasCharacters -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/tvshow#hasCharacters">
+        <rdfs:domain rdf:resource="https://w3id.org/tvshow#TVShow"/>
+        <rdfs:range rdf:resource="https://w3id.org/tvshow#Characters"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/tvshow#hasDirector -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/tvshow#hasDirector">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:range rdf:resource="https://w3id.org/tvshow#Director"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/tvshow#playedBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/tvshow#playedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/tvshow#Characters"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia.org/ontology/abstract -->
+
+    <owl:DatatypeProperty rdf:about="http://dbpedia.org/ontology/abstract"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/completionDate -->
+
+    <owl:DatatypeProperty rdf:about="http://dbpedia.org/ontology/completionDate">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/numberOfEpisodes -->
+
+    <owl:DatatypeProperty rdf:about="http://dbpedia.org/ontology/numberOfEpisodes"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/numberOfSeasons -->
+
+    <owl:DatatypeProperty rdf:about="http://dbpedia.org/ontology/numberOfSeasons">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://dbpedia.org/ontology/releaseDate -->
+
+    <owl:DatatypeProperty rdf:about="http://dbpedia.org/ontology/releaseDate">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
+    
+
+
+    <!-- https://w3id.org/tvshow#hasAge -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/tvshow#hasAge">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia.org/ontology/Location -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Location"/>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Person -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Person">
+        <owl:equivalentClass rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Image -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Image"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+    
+
+
+    <!-- https://w3id.org/tvshow#Adult -->
+
+    <owl:Class rdf:about="https://w3id.org/tvshow#Adult">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tvshow#Characters"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/tvshow#Child"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/tvshow#Channel -->
+
+    <owl:Class rdf:about="https://w3id.org/tvshow#Channel"/>
+    
+
+
+    <!-- https://w3id.org/tvshow#Characters -->
+
+    <owl:Class rdf:about="https://w3id.org/tvshow#Characters"/>
+    
+
+
+    <!-- https://w3id.org/tvshow#Child -->
+
+    <owl:Class rdf:about="https://w3id.org/tvshow#Child">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tvshow#Characters"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/tvshow#Director -->
+
+    <owl:Class rdf:about="https://w3id.org/tvshow#Director">
+        <owl:disjointWith rdf:resource="https://w3id.org/tvshow#ExecutiveProducer"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/tvshow#MusicComposer"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/tvshow#ExecutiveProducer -->
+
+    <owl:Class rdf:about="https://w3id.org/tvshow#ExecutiveProducer">
+        <owl:disjointWith rdf:resource="https://w3id.org/tvshow#MusicComposer"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/tvshow#Long -->
+
+    <owl:Class rdf:about="https://w3id.org/tvshow#Long">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tvshow#TVShow"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/tvshow#MusicComposer -->
+
+    <owl:Class rdf:about="https://w3id.org/tvshow#MusicComposer"/>
+    
+
+
+    <!-- https://w3id.org/tvshow#Short -->
+
+    <owl:Class rdf:about="https://w3id.org/tvshow#Short">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/tvshow#TVShow"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/tvshow#TVShow -->
+
+    <owl:Class rdf:about="https://w3id.org/tvshow#TVShow">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://dbpedia.org/ontology/composer"/>
+                <owl:allValuesFrom rdf:resource="http://dbpedia.org/ontology/Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://dbpedia.org/ontology/executiveProducer"/>
+                <owl:allValuesFrom rdf:resource="http://dbpedia.org/ontology/Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/tvshow#hasDirector"/>
+                <owl:allValuesFrom rdf:resource="http://dbpedia.org/ontology/Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia.org/ontology/HBO -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/ontology/HBO"/>
+    
+
+
+    <!-- https://dbpedia.org/page/Arya_Stark -->
+
+    <owl:NamedIndividual rdf:about="https://dbpedia.org/page/Arya_Stark">
+        <tvshow:playedBy rdf:resource="https://w3id.org/tvshow#Maisie_Williams"/>
+        <tvshow:hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</tvshow:hasAge>
+        <rdfs:sameAs rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://dbpedia.org/page/Arya_Stark</rdfs:sameAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://dbpedia.org/page/Carolyn_Strauss -->
+
+    <owl:NamedIndividual rdf:about="https://dbpedia.org/page/Carolyn_Strauss"/>
+    
+
+
+    <!-- https://dbpedia.org/page/Croatia -->
+
+    <owl:NamedIndividual rdf:about="https://dbpedia.org/page/Croatia"/>
+    
+
+
+    <!-- https://dbpedia.org/page/D._B._Weiss -->
+
+    <owl:NamedIndividual rdf:about="https://dbpedia.org/page/D._B._Weiss"/>
+    
+
+
+    <!-- https://dbpedia.org/page/David_Benioff -->
+
+    <owl:NamedIndividual rdf:about="https://dbpedia.org/page/David_Benioff"/>
+    
+
+
+    <!-- https://dbpedia.org/page/David_Nutter -->
+
+    <owl:NamedIndividual rdf:about="https://dbpedia.org/page/David_Nutter"/>
+    
+
+
+    <!-- https://dbpedia.org/page/Iceland -->
+
+    <owl:NamedIndividual rdf:about="https://dbpedia.org/page/Iceland"/>
+    
+
+
+    <!-- https://dbpedia.org/page/Jon_Snow -->
+
+    <owl:NamedIndividual rdf:about="https://dbpedia.org/page/Jon_Snow">
+        <tvshow:playedBy rdf:resource="https://w3id.org/tvshow#Kit_Harington"/>
+        <tvshow:hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">39</tvshow:hasAge>
+        <rdfs:sameAs rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://dbpedia.org/page/Jon_Snow_(character)</rdfs:sameAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://dbpedia.org/page/Ramin_Djawadi -->
+
+    <owl:NamedIndividual rdf:about="https://dbpedia.org/page/Ramin_Djawadi">
+        <rdf:type rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tvshow#Alan_Taylor -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tvshow#Alan_Taylor"/>
+    
+
+
+    <!-- https://w3id.org/tvshow#GameOfThrones -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tvshow#GameOfThrones">
+        <dbo:channel rdf:resource="http://dbpedia.org/ontology/HBO"/>
+        <dbo:composer rdf:resource="https://dbpedia.org/page/Ramin_Djawadi"/>
+        <dbo:executiveProducer rdf:resource="https://dbpedia.org/page/Carolyn_Strauss"/>
+        <dbo:executiveProducer rdf:resource="https://dbpedia.org/page/D._B._Weiss"/>
+        <dbo:executiveProducer rdf:resource="https://dbpedia.org/page/David_Benioff"/>
+        <dbo:executiveProducer rdf:resource="https://dbpedia.org/page/David_Nutter"/>
+        <dbo:location rdf:resource="https://dbpedia.org/page/Croatia"/>
+        <dbo:location rdf:resource="https://dbpedia.org/page/Iceland"/>
+        <tvshow:hasCharacters rdf:resource="https://dbpedia.org/page/Arya_Stark"/>
+        <tvshow:hasCharacters rdf:resource="https://dbpedia.org/page/Jon_Snow"/>
+        <tvshow:hasDirector rdf:resource="https://w3id.org/tvshow#Alan_Taylor"/>
+        <tvshow:hasDirector rdf:resource="https://w3id.org/tvshow#Mark_Mylod"/>
+        <dbo:abstract xml:lang="en">Game of Thrones is an American fantasy drama television series created by David Benioff and D. B. Weiss for HBO. It is an adaptation of A Song of Ice and Fire, a series of fantasy novels by George R. R. Martin, the first of which is A Game of Thrones. The show was shot in the United Kingdom, Canada, Croatia, Iceland, Malta, Morocco, and Spain. It premiered on HBO in the United States on April 17, 2011, and concluded on May 19, 2019, with 73 episodes broadcast over eight seasons. Set on the fictional continents of Westeros and Essos, Game of Thrones has a large ensemble cast and follows several story arcs throughout the course of the show. The first major arc concerns the Iron Throne of the Seven Kingdoms of Westeros through a web of political conflicts among the noble families either vying to claim the throne or fighting for independence from whoever sits on it. A second focuses on the last descendant of the realm&apos;s deposed ruling dynasty, who has been exiled to Essos and is plotting to return and reclaim the throne. The third follows the Night&apos;s Watch, a military order defending the realm against threats from beyond Westeros&apos;s northern border. Game of Thrones attracted a record viewership on HBO and has a broad, active, and international fan base. Critics have praised the series for its acting, complex characters, story, scope, and production values, although its frequent use of nudity and violence (including sexual violence) has been subject to criticism. The final season received significant critical backlash for its reduced length and creative decisions, with many considering it a disappointing conclusion. The series received 59 Primetime Emmy Awards, the most by a drama series, including Outstanding Drama Series in 2015, 2016, 2018 and 2019. Its other awards and nominations include three Hugo Awards for Best Dramatic Presentation, a Peabody Award, and five nominations for the Golden Globe Award for Best Television Series – Drama. Many critics and publications have named the show as one of the best television series of all time.</dbo:abstract>
+        <dbo:completionDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-19T00:00:00.00</dbo:completionDate>
+        <dbo:numberOfEpisodes rdf:datatype="http://www.w3.org/2001/XMLSchema#int">73</dbo:numberOfEpisodes>
+        <dbo:numberOfSeasons rdf:datatype="http://www.w3.org/2001/XMLSchema#int">8</dbo:numberOfSeasons>
+        <rdfs:sameAs rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://dbpedia.org/page/Game_of_Thrones</rdfs:sameAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tvshow#Kit_Harington -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tvshow#Kit_Harington">
+        <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kit Harington</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/tvshow#Maisie_Williams -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tvshow#Maisie_Williams"/>
+    
+
+
+    <!-- https://w3id.org/tvshow#Mark_Mylod -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/tvshow#Mark_Mylod"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="urn:swrl:var#n">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#c">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#s">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#t">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/tvshow#Characters"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://w3id.org/tvshow#hasAge"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#c"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#n"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#n"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/tvshow#Child"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                        <swrl:arguments>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first rdf:resource="urn:swrl:var#s"/>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://dbpedia.org/ontology/numberOfSeasons"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#t"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="https://w3id.org/tvshow#TVShow"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#t"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/tvshow#Long"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                        <swrl:arguments>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first rdf:resource="urn:swrl:var#s"/>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://dbpedia.org/ontology/numberOfSeasons"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#t"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="https://w3id.org/tvshow#TVShow"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#t"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/tvshow#Short"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                        <swrl:arguments>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first rdf:resource="urn:swrl:var#n"/>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="https://w3id.org/tvshow#Characters"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#c"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/tvshow#hasAge"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#c"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#n"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/tvshow#Adult"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
