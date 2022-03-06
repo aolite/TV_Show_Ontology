@@ -1,0 +1,408 @@
+<https://w3id.org/tvshow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/tvshow> <http://www.w3.org/2002/07/owl#versionInfo> "v0.0.1" .
+<https://w3id.org/tvshow> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#abstract> "A representation of the TV Shows including their characters, episodes, etc." .
+<https://w3id.org/tvshow> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#abstract> "Aitor Corchero" .
+<https://w3id.org/tvshow> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#title> "TVShowsOntology" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2000/01/rdf-schema#sameAs
+<http://www.w3.org/2000/01/rdf-schema#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#abstract
+<https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#creator
+<https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#title
+<https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://dbpedia.org/ontology/channel
+<http://dbpedia.org/ontology/channel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://dbpedia.org/ontology/channel> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/tvshow#Channel> .
+# 
+# http://dbpedia.org/ontology/composer
+<http://dbpedia.org/ontology/composer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://dbpedia.org/ontology/composer> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/tvshow#MusicComposer> .
+# 
+# http://dbpedia.org/ontology/executiveProducer
+<http://dbpedia.org/ontology/executiveProducer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://dbpedia.org/ontology/executiveProducer> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/tvshow#ExecutiveProducer> .
+# 
+# http://dbpedia.org/ontology/location
+<http://dbpedia.org/ontology/location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://dbpedia.org/ontology/location> <http://www.w3.org/2000/01/rdf-schema#range> <http://dbpedia.org/ontology/Location> .
+# 
+# http://xmlns.com/foaf/0.1/depiction
+<http://xmlns.com/foaf/0.1/depiction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://xmlns.com/foaf/0.1/depiction> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Image> .
+# 
+# https://w3id.org/tvshow#hasCharacters
+<https://w3id.org/tvshow#hasCharacters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/tvshow#hasCharacters> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/tvshow#TVShow> .
+<https://w3id.org/tvshow#hasCharacters> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/tvshow#Characters> .
+# 
+# https://w3id.org/tvshow#hasDirector
+<https://w3id.org/tvshow#hasDirector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/tvshow#hasDirector> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/tvshow#hasDirector> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/tvshow#Director> .
+# 
+# https://w3id.org/tvshow#playedBy
+<https://w3id.org/tvshow#playedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/tvshow#playedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/tvshow#playedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/tvshow#Characters> .
+<https://w3id.org/tvshow#playedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://dbpedia.org/ontology/Person> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://dbpedia.org/ontology/abstract
+<http://dbpedia.org/ontology/abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://dbpedia.org/ontology/completionDate
+<http://dbpedia.org/ontology/completionDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://dbpedia.org/ontology/completionDate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+# 
+# http://dbpedia.org/ontology/numberOfEpisodes
+<http://dbpedia.org/ontology/numberOfEpisodes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://dbpedia.org/ontology/numberOfSeasons
+<http://dbpedia.org/ontology/numberOfSeasons> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://dbpedia.org/ontology/numberOfSeasons> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+# 
+# http://dbpedia.org/ontology/releaseDate
+<http://dbpedia.org/ontology/releaseDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://dbpedia.org/ontology/releaseDate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+# 
+# http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/tvshow#hasAge
+<https://w3id.org/tvshow#hasAge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/tvshow#hasAge> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://dbpedia.org/ontology/Location
+<http://dbpedia.org/ontology/Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://dbpedia.org/ontology/Person
+<http://dbpedia.org/ontology/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://dbpedia.org/ontology/Person> <http://www.w3.org/2002/07/owl#equivalentClass> <http://xmlns.com/foaf/0.1/Person> .
+# 
+# http://xmlns.com/foaf/0.1/Image
+<http://xmlns.com/foaf/0.1/Image> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/tvshow#Adult
+<https://w3id.org/tvshow#Adult> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/tvshow#Adult> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tvshow#Characters> .
+<https://w3id.org/tvshow#Adult> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/tvshow#Child> .
+# 
+# https://w3id.org/tvshow#Channel
+<https://w3id.org/tvshow#Channel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/tvshow#Characters
+<https://w3id.org/tvshow#Characters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/tvshow#Child
+<https://w3id.org/tvshow#Child> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/tvshow#Child> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tvshow#Characters> .
+# 
+# https://w3id.org/tvshow#Director
+<https://w3id.org/tvshow#Director> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/tvshow#Director> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/tvshow#ExecutiveProducer> .
+<https://w3id.org/tvshow#Director> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/tvshow#MusicComposer> .
+# 
+# https://w3id.org/tvshow#ExecutiveProducer
+<https://w3id.org/tvshow#ExecutiveProducer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/tvshow#ExecutiveProducer> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/tvshow#MusicComposer> .
+# 
+# https://w3id.org/tvshow#Long
+<https://w3id.org/tvshow#Long> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/tvshow#Long> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tvshow#TVShow> .
+# 
+# https://w3id.org/tvshow#MusicComposer
+<https://w3id.org/tvshow#MusicComposer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/tvshow#Short
+<https://w3id.org/tvshow#Short> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/tvshow#Short> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/tvshow#TVShow> .
+# 
+# https://w3id.org/tvshow#TVShow
+<https://w3id.org/tvshow#TVShow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/tvshow#TVShow> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://dbpedia.org/ontology/composer> .
+_:genid1 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://dbpedia.org/ontology/Person> .
+<https://w3id.org/tvshow#TVShow> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://dbpedia.org/ontology/executiveProducer> .
+_:genid2 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://dbpedia.org/ontology/Person> .
+<https://w3id.org/tvshow#TVShow> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/tvshow#hasDirector> .
+_:genid3 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://dbpedia.org/ontology/Person> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://dbpedia.org/ontology/HBO
+<http://dbpedia.org/ontology/HBO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://dbpedia.org/page/Arya_Stark
+<https://dbpedia.org/page/Arya_Stark> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://dbpedia.org/page/Arya_Stark> <https://w3id.org/tvshow#playedBy> <https://w3id.org/tvshow#Maisie_Williams> .
+<https://dbpedia.org/page/Arya_Stark> <https://w3id.org/tvshow#hasAge> "12"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://dbpedia.org/page/Arya_Stark> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Arya_Stark"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# https://dbpedia.org/page/Carolyn_Strauss
+<https://dbpedia.org/page/Carolyn_Strauss> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://dbpedia.org/page/Croatia
+<https://dbpedia.org/page/Croatia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://dbpedia.org/page/D._B._Weiss
+<https://dbpedia.org/page/D._B._Weiss> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://dbpedia.org/page/David_Benioff
+<https://dbpedia.org/page/David_Benioff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://dbpedia.org/page/David_Nutter
+<https://dbpedia.org/page/David_Nutter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://dbpedia.org/page/Iceland
+<https://dbpedia.org/page/Iceland> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://dbpedia.org/page/Jon_Snow
+<https://dbpedia.org/page/Jon_Snow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://dbpedia.org/page/Jon_Snow> <https://w3id.org/tvshow#playedBy> <https://w3id.org/tvshow#Kit_Harington> .
+<https://dbpedia.org/page/Jon_Snow> <https://w3id.org/tvshow#hasAge> "39"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://dbpedia.org/page/Jon_Snow> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Jon_Snow_(character)"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# https://dbpedia.org/page/Ramin_Djawadi
+<https://dbpedia.org/page/Ramin_Djawadi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://dbpedia.org/page/Ramin_Djawadi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Person> .
+# 
+# https://w3id.org/tvshow#Alan_Taylor
+<https://w3id.org/tvshow#Alan_Taylor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.org/tvshow#GameOfThrones
+<https://w3id.org/tvshow#GameOfThrones> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/tvshow#GameOfThrones> <http://dbpedia.org/ontology/channel> <http://dbpedia.org/ontology/HBO> .
+<https://w3id.org/tvshow#GameOfThrones> <http://dbpedia.org/ontology/composer> <https://dbpedia.org/page/Ramin_Djawadi> .
+<https://w3id.org/tvshow#GameOfThrones> <http://dbpedia.org/ontology/executiveProducer> <https://dbpedia.org/page/Carolyn_Strauss> .
+<https://w3id.org/tvshow#GameOfThrones> <http://dbpedia.org/ontology/executiveProducer> <https://dbpedia.org/page/D._B._Weiss> .
+<https://w3id.org/tvshow#GameOfThrones> <http://dbpedia.org/ontology/executiveProducer> <https://dbpedia.org/page/David_Benioff> .
+<https://w3id.org/tvshow#GameOfThrones> <http://dbpedia.org/ontology/executiveProducer> <https://dbpedia.org/page/David_Nutter> .
+<https://w3id.org/tvshow#GameOfThrones> <http://dbpedia.org/ontology/location> <https://dbpedia.org/page/Croatia> .
+<https://w3id.org/tvshow#GameOfThrones> <http://dbpedia.org/ontology/location> <https://dbpedia.org/page/Iceland> .
+<https://w3id.org/tvshow#GameOfThrones> <https://w3id.org/tvshow#hasCharacters> <https://dbpedia.org/page/Arya_Stark> .
+<https://w3id.org/tvshow#GameOfThrones> <https://w3id.org/tvshow#hasCharacters> <https://dbpedia.org/page/Jon_Snow> .
+<https://w3id.org/tvshow#GameOfThrones> <https://w3id.org/tvshow#hasDirector> <https://w3id.org/tvshow#Alan_Taylor> .
+<https://w3id.org/tvshow#GameOfThrones> <https://w3id.org/tvshow#hasDirector> <https://w3id.org/tvshow#Mark_Mylod> .
+<https://w3id.org/tvshow#GameOfThrones> <http://dbpedia.org/ontology/abstract> "Game of Thrones is an American fantasy drama television series created by David Benioff and D. B. Weiss for HBO. It is an adaptation of A Song of Ice and Fire, a series of fantasy novels by George R. R. Martin, the first of which is A Game of Thrones. The show was shot in the United Kingdom, Canada, Croatia, Iceland, Malta, Morocco, and Spain. It premiered on HBO in the United States on April 17, 2011, and concluded on May 19, 2019, with 73 episodes broadcast over eight seasons. Set on the fictional continents of Westeros and Essos, Game of Thrones has a large ensemble cast and follows several story arcs throughout the course of the show. The first major arc concerns the Iron Throne of the Seven Kingdoms of Westeros through a web of political conflicts among the noble families either vying to claim the throne or fighting for independence from whoever sits on it. A second focuses on the last descendant of the realm's deposed ruling dynasty, who has been exiled to Essos and is plotting to return and reclaim the throne. The third follows the Night's Watch, a military order defending the realm against threats from beyond Westeros's northern border. Game of Thrones attracted a record viewership on HBO and has a broad, active, and international fan base. Critics have praised the series for its acting, complex characters, story, scope, and production values, although its frequent use of nudity and violence (including sexual violence) has been subject to criticism. The final season received significant critical backlash for its reduced length and creative decisions, with many considering it a disappointing conclusion. The series received 59 Primetime Emmy Awards, the most by a drama series, including Outstanding Drama Series in 2015, 2016, 2018 and 2019. Its other awards and nominations include three Hugo Awards for Best Dramatic Presentation, a Peabody Award, and five nominations for the Golden Globe Award for Best Television Series – Drama. Many critics and publications have named the show as one of the best television series of all time."@en .
+<https://w3id.org/tvshow#GameOfThrones> <http://dbpedia.org/ontology/completionDate> "2019-05-19T00:00:00.00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/tvshow#GameOfThrones> <http://dbpedia.org/ontology/numberOfEpisodes> "73"^^<http://www.w3.org/2001/XMLSchema#int> .
+<https://w3id.org/tvshow#GameOfThrones> <http://dbpedia.org/ontology/numberOfSeasons> "8"^^<http://www.w3.org/2001/XMLSchema#int> .
+<https://w3id.org/tvshow#GameOfThrones> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Game_of_Thrones"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# https://w3id.org/tvshow#Kit_Harington
+<https://w3id.org/tvshow#Kit_Harington> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/tvshow#Kit_Harington> <http://xmlns.com/foaf/0.1/name> "Kit Harington" .
+# 
+# https://w3id.org/tvshow#Maisie_Williams
+<https://w3id.org/tvshow#Maisie_Williams> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.org/tvshow#Mark_Mylod
+<https://w3id.org/tvshow#Mark_Mylod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Rules
+# #
+# #################################################################
+# 
+# 
+<urn:swrl:var#c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#n> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#s> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#t> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid15 <http://www.w3.org/2003/11/swrl#body> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid21 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> .
+<http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid21 <http://www.w3.org/2003/11/swrl#arguments> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#n> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "15"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid19 <http://www.w3.org/2003/11/swrl#classPredicate> <https://w3id.org/tvshow#Characters> .
+_:genid19 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid17 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/tvshow#hasAge> .
+_:genid17 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid17 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#n> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid15 <http://www.w3.org/2003/11/swrl#head> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid25 <http://www.w3.org/2003/11/swrl#classPredicate> <https://w3id.org/tvshow#Adult> .
+_:genid25 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid26 <http://www.w3.org/2003/11/swrl#body> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid32 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> .
+_:genid32 <http://www.w3.org/2003/11/swrl#arguments> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#s> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid30 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://dbpedia.org/ontology/numberOfSeasons> .
+_:genid30 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#t> .
+_:genid30 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#s> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid28 <http://www.w3.org/2003/11/swrl#classPredicate> <https://w3id.org/tvshow#TVShow> .
+_:genid28 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#t> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid26 <http://www.w3.org/2003/11/swrl#head> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid36 <http://www.w3.org/2003/11/swrl#classPredicate> <https://w3id.org/tvshow#Long> .
+_:genid36 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#t> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid37 <http://www.w3.org/2003/11/swrl#body> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid43 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> .
+<http://www.w3.org/2003/11/swrlb#lessThan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid43 <http://www.w3.org/2003/11/swrl#arguments> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#s> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid41 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://dbpedia.org/ontology/numberOfSeasons> .
+_:genid41 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#t> .
+_:genid41 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#s> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid39 <http://www.w3.org/2003/11/swrl#classPredicate> <https://w3id.org/tvshow#TVShow> .
+_:genid39 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#t> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid37 <http://www.w3.org/2003/11/swrl#head> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid47 <http://www.w3.org/2003/11/swrl#classPredicate> <https://w3id.org/tvshow#Short> .
+_:genid47 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#t> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid4 <http://www.w3.org/2003/11/swrl#body> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid12 <http://www.w3.org/2003/11/swrl#classPredicate> <https://w3id.org/tvshow#Characters> .
+_:genid12 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid10 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://w3id.org/tvshow#hasAge> .
+_:genid10 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid10 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#n> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid6 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> .
+_:genid6 <http://www.w3.org/2003/11/swrl#arguments> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#n> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "15"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid4 <http://www.w3.org/2003/11/swrl#head> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid14 <http://www.w3.org/2003/11/swrl#classPredicate> <https://w3id.org/tvshow#Child> .
+_:genid14 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
