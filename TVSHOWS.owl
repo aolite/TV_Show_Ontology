@@ -13,7 +13,7 @@
      xmlns:tvshow="https://w3id.org/tvshow#"
      xmlns:dcmi-terms="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#"
      xmlns:untitled-ontology-13="http://www.semanticweb.org/aitor.corchero/ontologies/2022/2/untitled-ontology-13#">
-    <owl:Ontology rdf:about="https://w3id.org/tvshow">
+    <owl:Ontology rdf:about="https://w3id.org/def/tvshow">
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">v0.0.1</owl:versionInfo>
         <dcmi-terms:abstract rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A representation of the TV Shows including their characters, episodes, etc.</dcmi-terms:abstract>
         <dcmi-terms:abstract rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aitor Corchero</dcmi-terms:abstract>
