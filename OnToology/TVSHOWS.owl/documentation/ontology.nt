@@ -1,8 +1,8 @@
-<https://w3id.org/tvshow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://w3id.org/tvshow> <http://www.w3.org/2002/07/owl#versionInfo> "v0.0.1" .
-<https://w3id.org/tvshow> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#abstract> "A representation of the TV Shows including their characters, episodes, etc." .
-<https://w3id.org/tvshow> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#abstract> "Aitor Corchero" .
-<https://w3id.org/tvshow> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#title> "TVShowsOntology" .
+<https://w3id.org/def/tvshow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/def/tvshow> <http://www.w3.org/2002/07/owl#versionInfo> "v0.0.1" .
+<https://w3id.org/def/tvshow> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#abstract> "A representation of the TV Shows including their characters, episodes, etc." .
+<https://w3id.org/def/tvshow> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#abstract> "Aitor Corchero" .
+<https://w3id.org/def/tvshow> <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#title> "TVShowsOntology" .
 # 
 # 
 # #################################################################
