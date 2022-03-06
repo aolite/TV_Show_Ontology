@@ -403,7 +403,7 @@
   "@id" : "https://dbpedia.org/page/Ramin_Djawadi",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://dbpedia.org/ontology/Person" ]
 }, {
-  "@id" : "https://w3id.org/tvshow",
+  "@id" : "https://w3id.org/def/tvshow",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@value" : "v0.0.1"

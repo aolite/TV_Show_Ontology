@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/tvshow#"
-     xml:base="https://w3id.org/tvshow"
+<rdf:RDF xmlns="https://w3id.org/def/tvshow#"
+     xml:base="https://w3id.org/def/tvshow"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -12,7 +12,7 @@
      xmlns:tvshow="https://w3id.org/tvshow#"
      xmlns:ontology="http://dbpedia.org/ontology/"
      xmlns:dcmi-terms="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#">
-    <owl:Ontology rdf:about="https://w3id.org/tvshow">
+    <owl:Ontology rdf:about="https://w3id.org/def/tvshow">
         <owl:versionInfo>v0.0.1</owl:versionInfo>
         <dcmi-terms:abstract>A representation of the TV Shows including their characters, episodes, etc.</dcmi-terms:abstract>
         <dcmi-terms:abstract>Aitor Corchero</dcmi-terms:abstract>
@@ -386,8 +386,8 @@
 
 
     <owl:NamedIndividual rdf:about="https://dbpedia.org/page/Arya_Stark">
-        <playedBy rdf:resource="https://w3id.org/tvshow#Maisie_Williams"/>
-        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</hasAge>
+        <tvshow:playedBy rdf:resource="https://w3id.org/tvshow#Maisie_Williams"/>
+        <tvshow:hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</tvshow:hasAge>
         <rdfs:sameAs rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://dbpedia.org/page/Arya_Stark</rdfs:sameAs>
     </owl:NamedIndividual>
     
@@ -439,8 +439,8 @@
 
 
     <owl:NamedIndividual rdf:about="https://dbpedia.org/page/Jon_Snow">
-        <playedBy rdf:resource="https://w3id.org/tvshow#Kit_Harington"/>
-        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">39</hasAge>
+        <tvshow:playedBy rdf:resource="https://w3id.org/tvshow#Kit_Harington"/>
+        <tvshow:hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">39</tvshow:hasAge>
         <rdfs:sameAs rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://dbpedia.org/page/Jon_Snow_(character)</rdfs:sameAs>
     </owl:NamedIndividual>
     
@@ -474,10 +474,10 @@
         <ontology:executiveProducer rdf:resource="https://dbpedia.org/page/David_Nutter"/>
         <ontology:location rdf:resource="https://dbpedia.org/page/Croatia"/>
         <ontology:location rdf:resource="https://dbpedia.org/page/Iceland"/>
-        <hasCharacters rdf:resource="https://dbpedia.org/page/Arya_Stark"/>
-        <hasCharacters rdf:resource="https://dbpedia.org/page/Jon_Snow"/>
-        <hasDirector rdf:resource="https://w3id.org/tvshow#Alan_Taylor"/>
-        <hasDirector rdf:resource="https://w3id.org/tvshow#Mark_Mylod"/>
+        <tvshow:hasCharacters rdf:resource="https://dbpedia.org/page/Arya_Stark"/>
+        <tvshow:hasCharacters rdf:resource="https://dbpedia.org/page/Jon_Snow"/>
+        <tvshow:hasDirector rdf:resource="https://w3id.org/tvshow#Alan_Taylor"/>
+        <tvshow:hasDirector rdf:resource="https://w3id.org/tvshow#Mark_Mylod"/>
         <ontology:abstract xml:lang="en">Game of Thrones is an American fantasy drama television series created by David Benioff and D. B. Weiss for HBO. It is an adaptation of A Song of Ice and Fire, a series of fantasy novels by George R. R. Martin, the first of which is A Game of Thrones. The show was shot in the United Kingdom, Canada, Croatia, Iceland, Malta, Morocco, and Spain. It premiered on HBO in the United States on April 17, 2011, and concluded on May 19, 2019, with 73 episodes broadcast over eight seasons. Set on the fictional continents of Westeros and Essos, Game of Thrones has a large ensemble cast and follows several story arcs throughout the course of the show. The first major arc concerns the Iron Throne of the Seven Kingdoms of Westeros through a web of political conflicts among the noble families either vying to claim the throne or fighting for independence from whoever sits on it. A second focuses on the last descendant of the realm&apos;s deposed ruling dynasty, who has been exiled to Essos and is plotting to return and reclaim the throne. The third follows the Night&apos;s Watch, a military order defending the realm against threats from beyond Westeros&apos;s northern border. Game of Thrones attracted a record viewership on HBO and has a broad, active, and international fan base. Critics have praised the series for its acting, complex characters, story, scope, and production values, although its frequent use of nudity and violence (including sexual violence) has been subject to criticism. The final season received significant critical backlash for its reduced length and creative decisions, with many considering it a disappointing conclusion. The series received 59 Primetime Emmy Awards, the most by a drama series, including Outstanding Drama Series in 2015, 2016, 2018 and 2019. Its other awards and nominations include three Hugo Awards for Best Dramatic Presentation, a Peabody Award, and five nominations for the Golden Globe Award for Best Television Series – Drama. Many critics and publications have named the show as one of the best television series of all time.</ontology:abstract>
         <ontology:completionDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-19T00:00:00.00</ontology:completionDate>
         <ontology:numberOfEpisodes rdf:datatype="http://www.w3.org/2001/XMLSchema#int">73</ontology:numberOfEpisodes>
